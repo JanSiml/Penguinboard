@@ -6,17 +6,11 @@ body{
 table{
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   background: url(wallpaper.jpg) black;
   background-repeat: no-repeat;
   background-size: cover;
   /*background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#396d7c)); */
-=======
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#396d7c));
-
-  /*background-image: radial-gradient(circle farthest-corner at top ,#396d7c,#000000);
-*/
->>>>>>> 03d1b3608954ae7bbe9c93f6776d1bf04b37885d
+  /*background-image: radial-gradient(circle farthest-corner at top ,#396d7c,#000000); */
   color: white;
   margin: 0;
   border: 0;
