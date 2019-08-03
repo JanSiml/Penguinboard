@@ -11,7 +11,13 @@ table{
   border: 0;
   position: auto;
   text-align: center;
+  table-layout: fixed;
 
+}
+
+td{
+  width: 30%;
+  height: 30%;
 }
 
 .daily_quote{
