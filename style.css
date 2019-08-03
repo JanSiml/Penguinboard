@@ -36,14 +36,18 @@ td{
 /* TODO: topshadow einfügen */
 .location, .temperature {
 height: 15vh;
-width: 40%;
+width: 100%;
 display: flex;
-justify-content: space-around;
+justify-content:center;
 align-items: center;
+align-content: space-around;
+
 }
 
 .temperature{
+width: 100%;
 flex-direction: column;
+align-items: center;
 }
 
 .degree-section{
