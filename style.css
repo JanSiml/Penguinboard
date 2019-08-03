@@ -13,3 +13,28 @@ table{
   text-align: center;
 
 }
+
+.daily_quote{
+  font-style: italic;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+* {
+  font-family: 'Roboto';
+}
+
+.time {
+  color: #ddd;
+  text-shadow: 0 1px 5px black;
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.hour {
+  font-size: 80px;
+}
+
+.date {
+  font-size: 25px;
+}
