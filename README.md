@@ -1,3 +1,3 @@
-# Penguinboard
+# penguinBoard
 
 Small, Smart and lightweight Dashboard
