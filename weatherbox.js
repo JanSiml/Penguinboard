@@ -26,9 +26,9 @@ window.addEventListener('load', ()=> {
           //Set DOM Elements from the API
           temperatureDegree.textContent = Math.round(((temperature-32)/1.8)*10)/10;
           temperatureDescription.textContent = summary;
-          //Gibt Europe/Berlin zurück (anscheind API Abfrage sehr ungenau)
+          //Gibt Europe/Berlin zurück --> nimmt Timezone
           //locationTimezone.textContent = data.timezone;
-          // TODO: Andere API oder prüfen, ob API genauer geht
+          // TODO: API für Reverse Geocoding
           locationTimezone.textContent = "Erlangen";
           //Set Iconn
           setIcons(icon, document.querySelector('.icon'));
