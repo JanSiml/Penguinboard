@@ -22,11 +22,25 @@ window.addEventListener('load', ()=> {
         })
         .then(data =>{
           //console.log(data);
-          const {temperature, summary}= data.currently;
+          const {temperature, summary, icon}= data.currently;
           //Set DOM Elements from the API
           temperatureDegree.textContent = Math.round(((temperature-32)/1.8)*10)/10;
+          temperatureDescription.textContent = summary;
+          //Gibt Europe/Berlin zurück (anscheind API Abfrage sehr ungenau)
+          //locationTimezone.textContent = data.timezone;
+          // TODO: Andere API oder prüfen, ob API genauer geht
+          locationTimezone.textContent = "Erlangen";
+          //Set Iconn
+          setIcons(icon, document.querySelector('.icon'));
 
         });
     });
+  }
+
+  function setIcons(icon, iconID){
+    const skycons = new Skycons({color: "white"});
+    const currentIcon =icon.replace(/-/g,"_").toUpperCase();
+    skycons.play();
+    return skycons.set(iconID,Skycons[currentIcon]);
   }
 });
